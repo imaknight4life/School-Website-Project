@@ -28,10 +28,15 @@ def about_me():
 def lessons():
     return render_template("lessons.html")
 
+@app.route("/gallery")
+def gallery():
+    return render_template("gallery.html")
+
 # main driver function
 if __name__ == '__main__':
 
     # run() method of Flask c
     # lass runs the application 
     # on the local development server.
+
     app.run(debug=True, host="0.0.0.0", port="9290")
