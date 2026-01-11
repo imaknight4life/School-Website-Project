@@ -1,7 +1,7 @@
 # Store Website – Client Project (In Progress)
 
 ## Overview
-An in-progress website being developed as part of a school work experience project for a client named Martin Andrews. The goal of the project is to create a clear, user-friendly website to represent the client’s store online.
+An in-progress website being developed as part of a school work experience project for a client named Martin Andrews. The goal of the project is to showcase the client’s skills, introduce him to visitors, and provide information about his store as part of the page content.
 
 ## Technologies Used
 - HTML
