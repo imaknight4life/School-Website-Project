@@ -1,0 +1,142 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+.nav-bar {
+  display: flex;
+  flex-direction: column;            /* stack title/logo and links vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Center title + logo */
+.nav-bar .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;               /* space between logo/title and nav links */
+}
+
+.nav-bar .left h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.logo {
+  height: 55px;                      /* adjust as needed */
+  width: auto;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+
+/* Navigation links */
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-bar .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.nav-bar .left h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.logo {
+  height: 55px;
+  width: auto;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+
+.nav-bar .right {
+  display: flex;
+  gap: 25px;
+}
+
+.right a {
+  text-decoration: none;
+  color: #666;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.right a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transition: transform 0.3s ease;
+}
+
+.right a:hover {
+  color: black;
+}
+
+.right a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.right a.active {
+  color: black;
+}
+
+
+footer {
+  background-color: #f4f4f4;
+  padding: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+footer a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

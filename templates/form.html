@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Martin Andrews Glass</title>
+  <link rel="stylesheet" href="static/form.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav-bar">
+    <div class="left">
+      <h1>Martin Andrews Glass</h1>
+      <img src="static/images/main_logo.png" alt="Martin Andrews Glass Logo" class="logo">
+    </div>
+    <nav class="right">
+      <a href="/" class="active">Home</a>
+      <a href="{{ url_for('about_me') }}">About Me</a>
+      <a href="#">Store</a>
+      <a href="{{ url_for('lessons') }}">Lessons</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('trade') }}">Trade</a>
+      <a href="{{ url_for('gallery') }}">Gallery</a>
+      
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="contact-container">
+    <section class="contact-intro">
+      <h2>Get in Touch</h2>
+      <p>Have a question, need a quote, or just want to discuss a custom glass project? Fill out the form below or use the details provided — we’ll get back to you shortly.</p>
+    </section>
+
+    <section class="contact-content">
+      <div class="contact-form">
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+        <p class="form-success" id="formSuccess">Thank you! Your message has been sent.</p>
+      </div>
+
+      <div class="contact-details">
+        <h3>Contact Info</h3>
+        <p><strong>Email:</strong> info@martinandrewsglass.com</p>
+        <p><strong>Phone:</strong> 01384 399462</p>
+        <p><strong>Location:</strong> Stourbridge, United Kingdom</p>
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.641057440681!2d-2.155754522779018!3d52.4675277720475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487091b4fa5aa085%3A0x49f762f163680786!2sMartin%20Andrews%20Glassblowing!5e0!3m2!1sen!2suk!4v1762769180317!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Martin Andrews Glass. All rights reserved.</p>
+      <p>
+        Follow us on
+        <a href="#">Instagram</a>,
+        <a href="#">Facebook</a>,
+        <a href="#">Pinterest</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="static/js/contact.js"></script>
+</body>
+</html>

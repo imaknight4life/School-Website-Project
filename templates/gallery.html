@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martin Andrews Glass Webpage</title>
+  <meta name="description" content="Showcase of handcrafted glass art by Martin Andrews, featuring unique designs and elegant craftsmanship." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/index.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="nav-bar">
+    <div class="left">
+      <h1>Martin Andrews Glass</h1>
+      <img src="static/images/main_logo.png" alt="Martin Andrews Glass Logo" class="logo">
+    </div>
+    <nav class="right">
+      <a href="/" class="active">Home</a>
+      <a href="{{ url_for('about_me') }}">About Me</a>
+      <a href="#">Store</a>
+      <a href="{{ url_for('lessons') }}">Lessons</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('trade') }}">Trade</a>
+      <a href="{{ url_for('gallery') }}">Gallery</a>
+      
+    </nav>
+  </header>

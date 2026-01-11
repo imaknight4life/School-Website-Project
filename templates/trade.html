@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/trade.css">
+</head>
+<body>
+  <header class="nav-bar">
+    <div class="left">
+      <h1>Martin Andrews Glass</h1>
+      <img src="static/images/main_logo.png" alt="Martin Andrews Glass Logo" class="logo">
+      </div>
+      <nav class="right">
+      <a href="/" class="active">Home</a>
+      <a href="{{ url_for('about_me') }}">About Me</a>
+      <a href="#">Store</a>
+      <a href="{{ url_for('lessons') }}">Lessons</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('trade') }}">Trade</a>
+      <a href="{{ url_for('gallery') }}">Gallery</a>
+      
+    </nav>
+  </header>
+
+
+
+
+      <footer>
+        <div class="footer-content">
+          <p>&copy; 2025 Martin Andrews Glass. All rights reserved.</p>
+          <p>
+            Follow us on
+            <a href="#">Instagram</a>,
+            <a href="#">Facebook</a>,
+            <a href="#">Pinterest</a>
+          </p>
+        </div>
+      </footer>
+
+</body>
+</html>

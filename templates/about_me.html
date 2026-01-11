@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Journey | Martin Andrews Glass</title>
+  <link rel="stylesheet" href="static/about_us.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Martin Andrews Glass</title>
+  <link rel="stylesheet" href="static/about_us.css">
+</head>
+<body>
+  <!-- NAVIGATION BAR -->
+  <header class="nav-bar">
+    <div class="left">
+      <h1>Martin Andrews Glass</h1>
+      <img src="static/images/main_logo.png" alt="Martin Andrews Glass Logo" class="logo">
+    </div>
+    <nav class="right">
+      <a href="/" class="active">Home</a>
+      <a href="{{ url_for('about_me') }}">About Me</a>
+      <a href="#">Store</a>
+      <a href="{{ url_for('lessons') }}">Lessons</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('trade') }}">Trade</a>
+      <a href="{{ url_for('gallery') }}">Gallery</a>
+      
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>About Martin Andrews</h2>
+      <p>Where craftsmanship meets light — a lifetime of transforming molten glass into meaning.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION 1 -->
+  <section class="about-section fade-in">
+    <div class="about-image">
+      <img src="static/images/martin-small.jpg" alt="Portrait of Martin Andrews">
+    </div>
+    <div class="about-text">
+      <h2>Meet the Artist</h2>
+      <p>Martin Andrews is an accomplished glass artist and the founder of Andrews Glassworks, established in 1991. A graduate of West Surrey College, he blends fine art and design expertise to craft unique glass creations that merge technical mastery with emotional storytelling.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION 2 -->
+  <section class="about-section swapped fade-in">
+    <div class="about-text">
+      <h2>Bespoke Glass for Every Space</h2>
+      <p>Martin’s work brings colour and character to a wide range of settings:</p>
+      <ul>
+        <li><strong>Schools:</strong> Decorative etched windows.</li>
+        <li><strong>Hospitals:</strong> Commemorative coloured windows.</li>
+        <li><strong>Private & Commercial:</strong> Bespoke designs for homes, hotels, and businesses.</li>
+        <li><strong>Churches:</strong> Intricate architectural glasswork with spiritual depth.</li>
+      </ul>
+      <p class="highlight"><strong>Featured Work:</strong> A 2.5-meter architectural cross for St. John’s Church — six laminated glass layers, engraved with silver “tears” and hands based on the congregation.</p>
+    </div>
+    <div class="about-image">
+      <img src="static/images/cross.jpg" alt="Architectural glass cross at St. John's Church">
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION 3 -->
+  <section class="about-section fade-in">
+    <div class="about-image">
+      <img src="static/images/WINE_BOTTLES.jpg" alt="Abstract glasswork by Martin Andrews">
+    </div>
+    <div class="about-text">
+      <h2>Innovation in Glass</h2>
+      <p>Through Andrews Glassworks, Martin continues to push the boundaries of the craft — shaping molten glass into vibrant forms that celebrate the harmony of colour, form, and light.</p>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <header class="timeline-hero">
+    <h2>Our Journey Through the Years</h2>
+    <p>From humble beginnings to timeless craftsmanship — explore our story below.</p>
+  </header>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section">
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <img src="images/start.jpg" alt="Our Beginnings">
+          <div class="text">
+            <h3>1998 — The Beginning</h3>
+            <p>Martin Andrews Glass began as a small workshop focused on creating bespoke glass pieces by hand.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <img src="images/expansion.jpg" alt="Expansion">
+          <div class="text">
+            <h3>2005 — Expansion</h3>
+            <p>We expanded our workshop and introduced new cutting and shaping technologies, blending tradition with innovation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <img src="images/showroom.jpg" alt="Showroom Opening">
+          <div class="text">
+            <h3>2015 — Showroom Opens</h3>
+            <p>Our modern showroom opened to the public, showcasing our growing range of custom glasswork and designs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <img src="images/today.jpg" alt="Present Day">
+          <div class="text">
+            <h3>Today — Continuing the Legacy</h3>
+            <p>Now, Martin Andrews Glass stands as a trusted name across the UK for quality craftsmanship and creative design.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Martin Andrews Glass. All rights reserved.</p>
+      <p>
+        Follow us on
+        <a href="#">Instagram</a>,
+        <a href="#">Facebook</a>,
+        <a href="#">Pinterest</a>
+      </p>
+    </div>
+  </footer>
+  
+
+  <script>
+    // Simple fade-in effect for sections
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2 };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+</body>
+</html>

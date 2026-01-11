@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lessons | Martin Andrews Glass</title>
+  <link rel="stylesheet" href="static/lessons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav-bar">
+    <div class="left">
+      <h1>Martin Andrews Glass</h1>
+      <img src="static/images/main_logo.png" alt="Martin Andrews Glass Logo" class="logo">
+    </div>
+    <nav class="right">
+      <a href="/" class="active">Home</a>
+      <a href="{{ url_for('about_me') }}">About Me</a>
+      <a href="#">Store</a>
+      <a href="{{ url_for('lessons') }}">Lessons</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('trade') }}">Trade</a>
+      <a href="{{ url_for('gallery') }}">Gallery</a>
+      
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="lessons-hero">
+    <h2>Glassblowing Lessons</h2>
+    <p>Whether you're a complete beginner or looking to refine your skills, explore a range of hands-on glassblowing sessions designed for all levels.</p>
+  </section>
+
+  <!-- LESSON PACKAGES -->
+  <section class="lesson-packages">
+    <h3>Available Lessons</h3>
+
+    <div class="packages-grid">
+
+      <div class="package-card">
+        <img src="static/images/lesson_beginner.jpg" alt="Beginner Glassblowing">
+        <h4>Beginner Taster Session</h4>
+        <p>A perfect introduction to hot glass. Learn safety, shaping basics, and create your own piece to take home.</p>
+        <span class="price">£65 / 1 hour</span>
+      </div>
+
+      <div class="package-card">
+        <img src="static/images/lesson_private.jpg" alt="Private Glassblowing Lesson">
+        <h4>Private One-to-One Lesson</h4>
+        <p>A personalised session tailored to your skill level and creative goals. Great for rapid learning.</p>
+        <span class="price">£160 / 2 hours</span>
+      </div>
+
+      <div class="package-card">
+        <img src="static/images/lesson_advanced.jpg" alt="Advanced Glassblowing">
+        <h4>Advanced Workshop</h4>
+        <p>For experienced students ready to tackle more complex forms, colour work, and tool control.</p>
+        <span class="price">£240 / 3 hours</span>
+      </div>
+
+      <div class="package-card">
+        <img src="static/images/lesson_group.jpg" alt="Group Lesson">
+        <h4>Group Experience</h4>
+        <p>A fun interactive session for friends, families, or team events. Create a memorable group artwork.</p>
+        <span class="price">£50 per person</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="schedule">
+    <h3>Weekly Schedule</h3>
+
+    <table class="schedule-table">
+      <tr>
+        <th>Day</th>
+        <th>Available Times</th>
+        <th>Class Type</th>
+      </tr>
+
+      <tr>
+        <td>Monday</td>
+        <td>10:00 – 13:00</td>
+        <td>Private Lessons</td>
+      </tr>
+
+      <tr>
+        <td>Wednesday</td>
+        <td>12:00 – 17:00</td>
+        <td>Taster Sessions & Workshops</td>
+      </tr>
+
+      <tr>
+        <td>Friday</td>
+        <td>10:00 – 16:00</td>
+        <td>One-to-One Lessons</td>
+      </tr>
+
+      <tr>
+        <td>Saturday</td>
+        <td>09:00 – 14:00</td>
+        <td>Group Sessions</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h3>Frequently Asked Questions</h3>
+
+    <details>
+      <summary>Do I need prior experience?</summary>
+      <p>No experience is required. Beginners are very welcome.</p>
+    </details>
+
+    <details>
+      <summary>Can I take home what I make?</summary>
+      <p>Yes — all pieces can be collected after cooling (usually next day).</p>
+    </details>
+
+    <details>
+      <summary>Is there an age requirement?</summary>
+      <p>The minimum age is 12, and under-18s must be accompanied by an adult.</p>
+    </details>
+
+    <details>
+      <summary>Do you allow gift vouchers?</summary>
+      <p>Yes! Gift vouchers are available for all lesson types.</p>
+    </details>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h3>Ready to Start Your Glassblowing Journey?</h3>
+    <a href="{{ url_for('contact') }}" class="cta-btn">Book a Lesson</a>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Martin Andrews Glass. All rights reserved.</p>
+      <p>
+        Follow us on
+        <a href="#">Instagram</a>,
+        <a href="#">Facebook</a>,
+        <a href="#">Pinterest</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

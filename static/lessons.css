@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #fafafa;
+    color: #333;
+  }
+  
+  /* NAVBAR — identical to contact page */
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-bar .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .nav-bar .left h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  
+  .logo {
+    height: 55px;
+    border-radius: 8px;
+  }
+  
+  .nav-bar .right {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .right a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  .right a:hover {
+    color: black;
+  }
+  
+  .right a.active {
+    color: black;
+  }
+  
+  /* HERO SECTION */
+  .lessons-hero {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .lessons-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .lessons-hero p {
+    color: #555;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  
+  /* PACKAGES */
+  .lesson-packages {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+  .lesson-packages h3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .package-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .package-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .package-card .price {
+    font-weight: 600;
+    color: #0077b6;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  /* SCHEDULE */
+  .schedule {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+  .schedule h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .schedule-table th,
+  .schedule-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .schedule-table th {
+    background: #f3f3f3;
+  }
+  
+  /* FAQ */
+  .faq {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+  .faq h3 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .faq details {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  
+  /* CTA */
+  .cta {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background-color: #0077b6;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #005f8a;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f4f4f4;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+  }
+  

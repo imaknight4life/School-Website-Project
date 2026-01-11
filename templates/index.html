@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martin Andrews Glass Webpage</title>
+  <meta name="description" content="Showcase of handcrafted glass art by Martin Andrews, featuring unique designs and elegant craftsmanship." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/index.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="nav-bar">
+    <div class="left">
+      <h1>Martin Andrews Glass</h1>
+      <img src="static/images/main_logo.png" alt="Martin Andrews Glass Logo" class="logo">
+    </div>
+    <nav class="right">
+      <a href="/" class="active">Home</a>
+      <a href="{{ url_for('about_me') }}">About Me</a>
+      <a href="#">Store</a>
+      <a href="{{ url_for('lessons') }}">Lessons</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('trade') }}">Trade</a>
+      <a href="{{ url_for('gallery') }}">Gallery</a>
+      
+    </nav>
+  </header>
+
+  <!-- SLIDESHOW -->
+  <section class="slideshow">
+    <div class="slides">
+      <div class="slide prev-slide">
+        <div class="image-wrapper">
+          <img src="static/images/RED_DRAGON.png" alt="Red dragon glass sculpture by Martin Andrews" />
+        </div>
+        <div class="title">Red Dragon</div>
+        <div class="caption"><a style="color:white; text-decoration: none;" href="#">A fiery masterpiece in glass form</a></div>
+      </div>
+
+      <div class="slide main-slide">
+        <div class="image-wrapper">
+          <img src="static/images/BLUE_ABSTRACT.png" alt="Blue abstract glass design" />
+        </div>
+        <div class="title">Blue Abstract</div>
+        <div class="caption"><a style="color:white; text-decoration: none;" href="#">Calm, flowing, and elegant</a></div>
+      </div>
+
+      <div class="slide next-slide">
+        <div class="image-wrapper">
+          <img src="static/images/ORANGE_BOWL.png" alt="Orange glass bowl with swirls" />
+        </div>
+        <div class="title">Orange Bowl</div>
+        <div class="caption"><a style="color:white; text-decoration: none;" href="#">Vibrant craftsmanship with modern style</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <h1>Welcome</h1>
+    <p>
+      Martin Andrews creates unique, handcrafted glass artworks combining traditional techniques
+      with modern design. Each piece reflects passion, precision, and creativity.
+    </p>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="featured">
+    <h2>Featured Pieces</h2>
+    <div class="featured-gallery">
+      <div class="piece">
+        <img src="static/images/RED_SPHERE.png" alt="Green Vase glass artwork" />
+        <h3>Ruby Sphere</h3>
+        <p>Elegant hand-blown glass with deep ruby hues and flowing contours.</p>
+      </div>
+      <div class="piece">
+        <img src="static/images/RED_PLATES.png" alt="Purple Swirl glass design" />
+        <h3>Red Plates</h3>
+        <p>Dynamic movement captured in rich tones of Ruby.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <blockquote>
+      “Martin’s glasswork is breathtaking. Each piece tells a story.” – Emily R.
+    </blockquote>
+    <blockquote>
+      “The craftsmanship is unmatched. I’ve never seen anything like it.” – James T.
+    </blockquote>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Martin Andrews Glass. All rights reserved.</p>
+      <p>
+        Follow us on
+        <a href="#">Instagram</a>,
+        <a href="#">Facebook</a>,
+        <a href="#">Pinterest</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
